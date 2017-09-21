@@ -2,7 +2,7 @@ package com.chromecasttest;
 
 import android.app.Application;
 
-import com.emadivizio.reactnativechromecast.RNChromeCastPackage;
+import com.emadivizio.reactnativechromecast.react.RNChromeCastPackage;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -24,7 +24,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
             new MainReactPackage(),
-            new RNChromeCastPackage(getApplication())
+            new RNChromeCastPackage()
       );
     }
   };
